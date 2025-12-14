@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+<header class="page-title">My Family</header>
+
+<nav class="nav-buttons">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="lab.html" class="nav-btn">Skills</a>
+    <a href="education.html" class="nav-btn">Education</a>
+    <a href="family2.html" class="nav-btn">Family</a>
+</nav>
+
+<div class="family-desc fade-in">
+    A collection of the best memories, special moments, and warm stories that shaped my journey. 
+    I have a beautiful mom and hardworking dad that inspire me to strive and find a peaceful life.
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="fam1.jpg" class="slide-img" style="width:100%">
+        <div class="caption">My Parents – The foundation of my journey.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam2.jpg" class="slide-img" style="width:100%">
+        <div class="caption">Siblings – My best supporters and partners in everything.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam3.jpg" class="slide-img" style="width:100%">
+        <div class="caption">Family Moments – Memories chilling together.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam4.jpg" class="slide-img" style="width:100%">
+        <div class="caption">Family Moments – My father in serius mood.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam5.jpg" class="slide-img" style="width:100%">
+        <div class="caption">Family Moments – Happy dinner together.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam6.jpg" class="slide-img" style="width:100%">
+        <div class="caption">Family Moments – Always awkward in front of camera.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam7.jpg" class="slide-img" style="width:100%">
+        <div class="caption">Family Moments – Hang out without me.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam8.jpeg" class="slide-img" style="width:100%">
+        <div class="caption">Family Moments – My father when he young.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="fam9.jpeg" class="slide-img" style="width:100%">
+        <div class="caption">Family Moments – Childhood memory with our siblings.</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+<section class="family-lessons fade-in">
+    <h2>What My Family Taught Me</h2>
+    <ul>
+        <li>Respect and love for one another</li>
+        <li>The importance of patience in life</li>
+        <li>Staying humble no matter where I go</li>
+        <li>HARD WORK and RESPONDSIBLITY</li>
+        That's the reason why my name is Amirul Amin
+    </ul>
+</section>
+
+<section class="family-message fade-in">
+    <p>
+        Thank you for being my constant support, my safe place, and the reason I keep moving forward.
+        Every sacrifice, lesson, and moment we shared will always stay in my heart.
+    </p>
+</section>
+
+<section class="family-growth">
+    <h2>From This → To This</h2>
+
+    <div class="growth-wrap">
+        <div class="growth-card">
+            <img src="child.jpeg">
+            <p>From a child full of dreams</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="growth-card">
+            <img src="adult.jpeg">
+            <p>To someone who never gave up</p>
+        </div>
+    </div>
+</section>
+
+<section class="family-quote">
+    <p>
+        “Thank you mom & dad.<br>
+        I may not be where I want to be yet,<br>
+        but I promise — I will make you proud.”
+    </p>
+</section>
+
+<footer class="footer">© 2025 Amin — Family Page</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+}
+</script>
+
+</body>
+</html>

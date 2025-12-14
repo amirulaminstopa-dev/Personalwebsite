@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Skills</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<header class="skills-title">My Skillset & Abilities</header>
+<nav class="nav-buttons">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="lab.html" class="nav-btn">Skills</a>
+    <a href="education.html" class="nav-btn">Education</a>
+    <a href="family2.html" class="nav-btn">Family</a>
+</nav>
+<p class="skills-sub">A complete showcase of my technical, soft, and creative abilities.</p>
+
+<section class="core-skills">
+  <div class="core-card">
+    <h3>Information Management</h3>
+    <p>Records classification, metadata, filing systems and archiving practices.</p>
+  </div>
+  <div class="core-card">
+    <h3>Digital Organization</h3>
+    <p>Digital filing, document workflows and cloud organization best practices.</p>
+  </div>
+  <div class="core-card">
+    <h3>Customer Service</h3>
+    <p>Skill to communicate effectively, handle issues calmly, and provide a positive experience for customers.</p>
+  </div>
+  <div class="core-card">
+    <h3>Communication</h3>
+    <p>Clear written & verbal skills; teamwork and presentation experience.</p>
+  </div>
+</section>
+
+<section class="tech-skills">
+  <h2>Technical Skills</h2>
+  <div class="tech-grid">
+    <div class="tech-item"><i class="fa-solid fa-file-lines"></i><span>MS Word</span></div>
+    <div class="tech-item"><i class="fa-solid fa-table-cells"></i><span>MS Excel</span></div>
+    <div class="tech-item"><i class="fa-solid fa-chart-simple"></i><span>PowerPoint</span></div>
+    <div class="tech-item"><i class="fa-brands fa-youtube"></i><span>Youtube</span></div>
+    <div class="tech-item"><i class="fa-brands fa-google"></i><span>Google Workspace</span></div>
+    <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML & CSS</span></div>
+    <div class="tech-item"><i class="fa-solid fa-photo-film"></i><span>Photoshop</span></div>
+    <div class="tech-item"><i class="fa-solid fa-video"></i><span>CapCut</span></div>
+  </div>
+</section>
+
+<section class="skill-bars">
+  <h2>Skill Ratings</h2>
+  <div class="bar-row">
+    <div class="label">HTML & CSS</div>
+    <div class="bar"><div class="bar-fill" data-percent="75"></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="label">Canva</div>
+    <div class="bar"><div class="bar-fill" data-percent="95"></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="label">Microsoft Excel</div>
+    <div class="bar"><div class="bar-fill" data-percent="80"></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="label">Communication</div>
+    <div class="bar"><div class="bar-fill" data-percent="88"></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="label">Problem Solving</div>
+    <div class="bar"><div class="bar-fill" data-percent="82"></div></div>
+  </div>
+</section>
+
+<section class="soft-skills">
+  <h2>Soft Skills</h2>
+  <div class="soft-grid">
+
+    <div class="soft-card">
+      <img src="leadership.jpeg" alt="Leadership Icon">
+      <span>Leadership</span>
+    </div>
+
+    <div class="soft-card">
+      <img src="teamwork.jpeg" alt="Teamwork Icon">
+      <span>Teamwork</span>
+    </div>
+
+    <div class="soft-card">
+      <img src="timemanage.jpeg" alt="Time Management Icon">
+      <span>Time Management</span>
+    </div>
+
+    <div class="soft-card">
+      <img src="critical.jpeg" alt="Critical Thinking Icon">
+      <span>Critical Thinking</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="tools">
+  <h2>Tools I Use</h2>
+  <div class="tools-grid">
+    <div class="tool"><i class="fa-brands fa-canva"></i><span>Canva</span></div>
+    <div class="tool"><i class="fa-brands fa-windows"></i><span>MS Office</span></div>
+    <div class="tool"><i class="fa-brands fa-google"></i><span>Google Workspace</span></div>
+    <div class="tool"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+    <div class="tool"><i class="fa-solid fa-list-check"></i><span>Trello</span></div>
+    <div class="tool"><i class="fa-solid fa-video"></i><span>CapCut</span></div>
+  </div>
+</section>
+
+<section class="skills-quote">
+  <p>“Skills build confidence, and confidence builds the future.”</p>
+</section>
+
+<footer class="footer">
+  © 2025 Amin — Skills Page
+</footer>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.bar-fill').forEach(function(el, idx) {
+      const pct = el.getAttribute('data-percent') || '0';
+      // delay for a staggered effect
+      setTimeout(function(){
+        el.style.width = pct + '%';
+      }, 150 * idx);
+    });
+  });
+</script>
+
+</body>
+</html>
